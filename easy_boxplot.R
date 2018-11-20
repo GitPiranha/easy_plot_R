@@ -6,13 +6,13 @@
 #' @param dataframe inputdata
 #' @keywords easy_boxplot
 #' @export
-#' @examples easy_boxplot(ds, ds$x, ds$y)
+#' @examples easy_boxplot(ds, ds$x, ds$y, colorOfPoints = ds$z)
 #' easy_boxplot()
 
 easy_boxplot <-  function(dataframe,
-                              xvar,
-                              yvar,
-                              colorOfPoints)
+                               xvar,
+                               yvar,
+                               colorOfPoints)
 {
   p <- ggplot(dataframe, aes(x=factor(xvar), y=yvar)) + geom_boxplot() +
     stat_summary(fun.y="mean",

@@ -4,7 +4,7 @@
 #' @param dataframe inputdata
 #' @keywords barplot
 #' @export
-#' @examples easy_barplot(ds, ds$x, dsy)
+#' @examples easy_barplot(ds, ds$x, ds$y)
 #' easy_barplot()
 
 easy_barplot <-  function(dataframe,

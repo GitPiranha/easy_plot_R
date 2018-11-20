@@ -8,8 +8,8 @@
 #' easy_scatterplot()
 
 easy_scatterplot <-  function(dataframe,
-                            xvar,
-                            yvar)
+                                   xvar,
+                                   yvar)
 {
   p <- ggplot(dataframe,
               aes_string(x = xvar,
