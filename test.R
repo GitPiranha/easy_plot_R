@@ -10,6 +10,8 @@ source("easy_boxplot.R")
 source("easy_scatterplot.R")
 source("easy_barplot.R")
 source("easy_densityplot.R")
+source("easy_densityplot_multiple.R")
+
 
 # Testing
 
@@ -29,4 +31,7 @@ easy_densityplot(mtcars, mtcars$hp, fill = "white") + xlab("test")
 
 
 easy_densityplot(mtcars, mtcars$hp, fill = "blue", histogram = "yes")
+
+
+easy_densityplot_multiple(mtcars, mtcars$hp, groupvar = mtcars$cyl)
 

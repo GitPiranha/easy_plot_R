@@ -27,8 +27,8 @@ easy_densityplot <-  function(dataframe = NULL,
   
   if (histogram == "yes")
   {
-    p <- p + geom_histogram(fill = "steelblue",
-                            colour = "steelblue",
+    p <- p + geom_histogram(fill = "grey",
+                            colour = "grey",
                             size = 2)
     
   }
