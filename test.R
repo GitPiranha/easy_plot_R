@@ -9,7 +9,7 @@ library(ggplot2)
 source("easy_boxplot.R")
 source("easy_scatterplot.R")
 source("easy_barplot.R")
-
+source("easy_densityplot.R")
 
 # Testing
 
@@ -22,3 +22,11 @@ easy_scatterplot(ds, ds$mpg, ds$disp) + ylab("test")
 
 
 easy_barplot(dataframe = ds, xvar = ds$mpg, yvar = ds$cyl)
+
+
+easy_densityplot(xvar = ds$hp)
+easy_densityplot(mtcars, mtcars$hp, fill = "white") + xlab("test")
+
+
+easy_densityplot(mtcars, mtcars$hp, fill = "blue", histogram = "yes")
+
